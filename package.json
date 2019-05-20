@@ -23,6 +23,6 @@
     "hexo-cli": "^1.1.0"
   },
   "scripts": {
-    "publish-sandbox": "hexo build && touch public/.nojekyll && git add public/ && git commit -m \"Deploy to branch gh-pages\" && git subtree push --prefix public origin gh-pages"
+    "publish-sandbox": "hexo generate && touch public/.nojekyll && git add public/ && git commit -m \"Deploy to branch gh-pages\" && git subtree push --prefix public origin gh-pages"
   }
 }
